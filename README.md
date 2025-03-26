@@ -19,3 +19,10 @@ CURL COMMANDS :
 [GetByID]curl localhost:3000/orders/myorder   // pretending that myorder is the ID
 [UpdateByID]curl -X PUT  localhost:3000/orders/myorder
 [DeleteByID]curl -X DELETE  localhost:3000/orders/myorder
+
+DOWNLOAD AND RUN REDIS :
+docker run -p 6379:6379 redis:latest
+
+CHECK REDIS USING REDIS-CLI : 
+redis-cli
+KEYS *
